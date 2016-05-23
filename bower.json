@@ -1,0 +1,16 @@
+{
+  "name": "tipi.base.element-group",
+  "homepage": "https://github.com/toolbarthomas/tipi.base.element-group",
+  "authors": [
+    "Thomas van der Velde <contact@toolbarthomas.net>"
+  ],
+  "description": "Horizontally align multiple elements",
+  "keywords": [
+    "toolbarthomas",
+    "modular",
+    "tipi",
+    "element-group"
+  ],
+  "license": "MIT",
+  "main": "_tipi.base.element-group.scss"
+}
