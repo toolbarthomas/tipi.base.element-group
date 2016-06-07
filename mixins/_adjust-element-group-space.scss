@@ -1,0 +1,53 @@
+@mixin adjust-element-group-space($gutter: $element-group-gutter, $baseline: $elemen-group-baseline, $direction: false) {
+	@if $direction == false or $direction == 'left'  {
+		.element-group {
+			margin-left: -$gutter;
+			margin-top: -$gutter;
+
+			> li {
+				padding-left: $gutter;
+				margin-top: $gutter;
+			}
+		}
+	}
+
+	@if $direction == false or $direction == 'right'  {
+		.element-group--right {
+			margin-left: 0;
+			margin-right: -$gutter;
+
+			> li {
+				padding-left: 0;
+				padding-right: $gutter;
+			}
+		}
+	}
+
+	@if $direction == false or $direction == 'center' {
+		.element-group--center {
+			margin-left: -$gutter / 2;
+			margin-right: -$gutter / 2;
+
+
+			> li {
+				padding-left: $gutter / 2;
+				padding-right: $gutter / 2;
+			}
+		}
+	}
+
+	@if $direction == false or $direction == 'vertical' {
+		.element-group--vertical {
+			margin: 0;
+
+			> li {
+				padding: 0;
+				margin: 0;
+
+				+ li {
+					margin-top: $baseline;
+				}
+			}
+		}
+	}
+}
