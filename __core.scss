@@ -1,4 +1,5 @@
-@mixin core_element-group {
+	ul.element-group,
+	ol.element-group,
 	.element-group {
 		display: block;
 		list-style: none;
@@ -19,6 +20,8 @@
 		}
 	}
 
+	ul.element-group--right,
+	ol.element-group--right,
 	.element-group--right {
 		text-align: right;
 		margin-left: 0;
@@ -30,6 +33,8 @@
 		}
 	}
 
+	ul.element-group--center,
+	ol.element-group--center,
 	.element-group--center {
 		text-align: center;
 		margin-left: -$element-group-gutter / 2;
@@ -37,11 +42,13 @@
 
 
 		> li {
-			padding-left: $element-group-gutter / 2;
-			padding-right: $element-group-gutter / 2;
+			padding-left: $element-group-gutter/2;
+			padding-right: $element-group-gutter/2;
 		}
 	}
 
+	ul.element-group--vertical,
+	ol.element-group--vertical,
 	.element-group--vertical {
 		margin: 0;
 
@@ -55,4 +62,3 @@
 			}
 		}
 	}
-}
