@@ -2,41 +2,29 @@
 	.element-group {
 		display: block;
 		list-style: none;
+		margin: 0;
+		margin-left: -$element-group-gutter;
+		margin-top: -$element-group-gutter;
+		padding: 0;
 		text-align: left;
+	}
 
-		&,
-		&:only-child,
-		&:last-child,
-		&:first-child {
-			margin: 0;
-			padding: 0;
-			margin-left: -$element-group-gutter;
-			margin-top: -$element-group-gutter;
-		}
-
-		> li {
-			text-align: left;
-			vertical-align: middle;
-			display: inline-block;
-			margin: 0;
-			padding: 0;
-			padding-left: $element-group-gutter;
-			margin-top: $element-group-gutter;
-		}
+	.element-group-item {
+		text-align: left;
+		vertical-align: middle;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		padding-left: $element-group-gutter;
+		margin-top: $element-group-gutter;
 	}
 
 	.element-group--right {
 		text-align: right;
+		margin-left: 0;
+		margin-right: -$element-group-gutter;
 
-		&,
-		&:only-child,
-		&:last-child,
-		&:first-child {
-			margin-left: 0;
-			margin-right: -$element-group-gutter;
-		}
-
-		> li {
+		> .element-group-item {
 			padding-left: 0;
 			padding-right: $element-group-gutter;
 		}
@@ -44,35 +32,24 @@
 
 	.element-group--center {
 		text-align: center;
+		margin-left: -$element-group-gutter / 2;
+		margin-right: -$element-group-gutter / 2;
 
-		&,
-		&:only-child,
-		&:last-child,
-		&:first-child {
-			margin-left: -$element-group-gutter / 2;
-			margin-right: -$element-group-gutter / 2;
-		}
-
-		> li {
+		> .element-group-item {
 			padding-left: $element-group-gutter/2;
 			padding-right: $element-group-gutter/2;
 		}
 	}
 
 	.element-group--vertical {
-		&,
-		&:only-child,
-		&:last-child,
-		&:first-child {
-			margin: 0;
-		}
+		margin: 0;
 
-		> li {
+		> .element-group-item {
 			display: block;
 			padding: 0;
 			margin: 0;
 
-			+ li {
+			+ .element-group-item {
 				margin-top: $element-group-baseline;
 			}
 		}
