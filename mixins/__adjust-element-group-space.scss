@@ -4,7 +4,7 @@
 			margin-left: -$gutter;
 			margin-top: -$gutter;
 
-			> li {
+			> .element-group-item {
 				padding-left: $gutter;
 				margin-top: $gutter;
 			}
@@ -16,7 +16,7 @@
 			margin-left: 0;
 			margin-right: -$gutter;
 
-			> li {
+			> .element-group-item {
 				padding-left: 0;
 				padding-right: $gutter;
 			}
@@ -29,7 +29,7 @@
 			margin-right: -$gutter / 2;
 
 
-			> li {
+			> .element-group-item {
 				padding-left: $gutter / 2;
 				padding-right: $gutter / 2;
 			}
@@ -40,11 +40,11 @@
 		.element-group--vertical {
 			margin: 0;
 
-			> li {
+			> .element-group-item {
 				padding: 0;
 				margin: 0;
 
-				+ li {
+				+ .element-group-item {
 					margin-top: $baseline;
 				}
 			}
