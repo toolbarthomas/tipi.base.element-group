@@ -25,9 +25,7 @@
 
 	@if $direction == false or $direction == 'center' {
 		.element-group--center {
-			margin-left: -$gutter / 2;
-			margin-right: -$gutter / 2;
-
+			margin: 0;
 
 			> .element-group-item {
 				padding-left: $gutter / 2;
