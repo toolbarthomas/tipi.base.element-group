@@ -23,6 +23,12 @@
 		text-align: center;
 	}
 
+	.element-group--vertical {
+		> .element-group-item {
+			display: block;
+		}
+	}
+
 	@include element-group-gutter(
 		$direction: false,
 		$gutter: $element-group-gutter
