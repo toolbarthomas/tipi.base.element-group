@@ -4,6 +4,10 @@
 ) {
 	.element-group {
 		margin-bottom: -$gutter;
+
+		> .element-group-item {
+			margin-bottom: $gutter;
+		}
 	}
 
 	@if $direction == false or unquote($direction) == left
@@ -13,7 +17,6 @@
 
 			> .element-group-item {
 				padding-left: $gutter;
-				margin-bottom: $gutter;
 			}
 		}
 	}
@@ -40,15 +43,6 @@
 			> .element-group-item {
 				padding-right: $gutter / 2;
 				padding-left: $gutter / 2;
-			}
-		}
-	}
-
-	@if $direction == false or unquote($direction) == vertical
-	{
-		.element-group--vertical {
-			> .element-group-item {
-				margin-bottom: $gutter;
 			}
 		}
 	}
