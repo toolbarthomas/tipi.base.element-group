@@ -1,9 +1,6 @@
 @mixin core_element-group {
 	.element-group {
 		display: block;
-		list-style: none;
-		margin: 0;
-		padding: 0;
 		text-align: left;
 	}
 
@@ -11,8 +8,6 @@
 		text-align: left;
 		vertical-align: middle;
 		display: inline-block;
-		margin: 0;
-		padding: 0;
 	}
 
 	.element-group--right {
